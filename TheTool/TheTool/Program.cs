@@ -14,6 +14,9 @@ namespace TheTool
 
                 var product = new Product { };
 
+                var printer = new ProductPrinter(ws);
+                printer.PrintProduct(product);
+
                 p.SaveAs(new FileInfo(@"to_import.xlsx"));
             }
         }
